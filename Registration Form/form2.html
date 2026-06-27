@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <style>
+            .submit-btn {
+                background-color: #7b52b9;
+                border-color: #7b52b9;
+                width: 160px;
+            }
+
+            .submit-btn:hover {
+                background-color: #6943a3;
+                border-color: #6943a3;
+            }
+
+            .form-container {
+                max-width: 700px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="container form-container">
+        <h1 class="fw-bold mb-4">Registration Form</h1>
+
+        <form>
+        
+            <div class="mb-3">
+                <label for="name" class="form-label fs-4">Name</label>
+                <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="name"
+                    placeholder="Enter name">
+            </div>
+
+            <div class="mb-3">
+                <label for="country" class="form-label fs-4">Country</label>
+                <select class="form-select form-select-lg" id="country">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                </select>
+            </div>
+
+
+            <div class="mb-4">
+                <label for="message" class="form-label fs-4">Message</label>
+                <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4">Hi there!</textarea>
+            </div>
+
+        
+            <div class="d-flex align-items-center gap-5 mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" checked id="music">
+                    <label class="form-check-label fs-5" for="music">
+                        Music
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sports">
+                    <label class="form-check-label fs-5" for="sports">
+                        Sports
+                    </label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" checked id="notify">
+                    <label class="form-check-label fs-5" for="notify">
+                        Notify
+                    </label>
+                </div>
+            </div>
+
+        
+            <button type="submit" class="btn btn-primary btn-lg submit-btn">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    </body>
+    </html>
